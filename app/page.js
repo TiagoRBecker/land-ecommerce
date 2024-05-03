@@ -37,9 +37,9 @@ export default function Home() {
               <h2 className="text-[#00003e] text-[1.5rem] ">Publicações</h2>
             </div>
           </div>
-          <div className="flex flex-col md:flex-row gap-2 items-center">
-            <div className="w-full md:w-[33%]">
-              <p className="text-[1.6rem] font-black text-[#00003e] ">
+          <div className="w-full flex flex-col md:flex-row gap-2 items-center ">
+            <div className="w-full md:w-[33%] ">
+              <p className="text-[1.6rem] font-black text-[#00003e] text-center ">
                 Proteja sua arte, proteja sua prática:
                 <span className="text-[#b98e0b]"> Harmonize </span>
                 com confiança, assine com segurança!
@@ -53,11 +53,11 @@ export default function Home() {
               />
             </div>
             <div className="w-full md:w-[33%]">
-              <p className="text-[1.6rem] font-black text-[#00003e] text-center">
+              <p className="text-[1.6rem] font-black text-[#00003e] text-center ">
                 <span className="text-[#b98e0b]">
-                  {" "}
-                  Documentos para harmonização{" "}
+                  Documentos 
                 </span>
+                {" "}para harmonização 
                 produzido por profissionais da saúde e juristas
               </p>
             </div>
@@ -81,9 +81,9 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <section className="w-full min-h-screen flex items-center justify-center bg-[#3b8e7d] bg-cover bg-center bg-no-repeat ">
-        <div className="container mx-auto grid-cols-1 md:grid md:grid-cols-2 gap-4  py-4">
-          <div className="w-full py-4">
+      <section className="w-full min-h-screen flex items-center justify-center bg-[#3b8e7d]  ">
+        <div className="container mx-auto grid-cols-1 md:grid md:grid-cols-2 gap-4  ">
+          <div className="w-full ">
             <div className="flex gap-3 items-center">
               {icons.map((url, index) => (
                 <img
@@ -98,7 +98,7 @@ export default function Home() {
               <h1 className="text-[1.8rem] my-8 font-bold text-white">
                 EQUIPE AUTORA
               </h1>
-              <p className="py-8 text-white  text-lg">
+              <p className="py-2 text-white  text-lg">
                 Somos uma equipe multidisciplinar formada por juristas e
                 profissionais da harmonização de diversas áreas. Protegemos a
                 prática e a reputação dos profissionais da área através de
@@ -111,7 +111,7 @@ export default function Home() {
               <h1 className="font-bold text-white text-lg">
                 Dra. Deusa Guedes
               </h1>
-              <p className="text-white font-light pb-8">
+              <p className="text-white font-light ">
                 Direito médico, empresarial e da saúde, atua na defesa de
                 clínicas e centros de estética
               </p>
@@ -127,7 +127,7 @@ export default function Home() {
             </div>
           </div>
           <div className="w-full h-full flex flex-col">
-            <div className="w-full max-h-[600px] grid grid-cols-3 gap-2 ">
+            <div className="w-full h-full grid grid-cols-3 gap-2 ">
               {mosaico.map((url, index) => (
                 <div key={index} className="w-full h-[200px] ">
                   <img
@@ -139,7 +139,7 @@ export default function Home() {
                 </div>
               ))}
             </div>
-            <div className="py-4 w-full h-full mt-6 flex items-center justify-center  relative">
+            <div className="py-4 w-full h-full mt-1 flex items-center justify-center  relative">
               <img
                 src="/logo.svg"
                 alt="Logo"
@@ -150,7 +150,7 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <section className="w-full h-full bg-[#d3ebe2] bg-cover bg-left-top bg-no-repeat py-10">
+      <section className="w-full h-full bg-[#d3ebe2] bg-cover bg-left-top bg-no-repeat ">
         <div className="container mx-auto  h-full  flex flex-col    ">
           <h1 className="text-[2rem] py-4 text-left ">
             DIFERENCIAIS DA DOCUMENTAÇÃO
@@ -191,7 +191,7 @@ export default function Home() {
                 </p>
               </div>
 
-              <div className="flex flex-col gap-2 my-10">
+              <div className="flex flex-col gap-2 ">
                 <h1>PRONTUÁRIOS ALINHADOS AO PRINCÍPIO DA AUTONOMIA</h1>
                 <h2>
                   Uma das{" "}
@@ -221,7 +221,7 @@ export default function Home() {
 
           <div className="w-full flex gap-2 ">
             <div className="w-[50%] h-full flex items-center justify-center ">
-            <div class="w-full h-full mt-8 ">
+            <div class="w-full h-full  ">
                 <img
                   src="/banner.svg"
                   loading="lazy"
@@ -253,8 +253,8 @@ export default function Home() {
                 </p>
               </div>
 
-              <div className="w-full flex flex-col gap-2 my-10">
-                <h1>OUTRAS VANTAGENS</h1>
+              <div className="w-full flex flex-col gap-2 my-4">
+                <h1 className="font-extrabold text-[#00003e] text-lg">OUTRAS VANTAGENS</h1>
                 <div className="pl-2 w-full ">
                   <ul class="list-disc flex flex-col gap-3">
                     <li className="list-outside text-left">
@@ -359,10 +359,10 @@ export default function Home() {
         </div>
       </section>
       <section className="w-full min-h-[50vh] bg-[#d3ebe2]  ">
-        <h1 className="text-3xl text-[#00003e] font-bold uppercase text-center py-10">Confira o depoimento de nossos clientes!</h1>
+        <h1 className="text-3xl text-[#00003e] font-bold uppercase text-center ">Confira o depoimento de nossos clientes!</h1>
         <Carousel/>
       </section>
-      <section className="w-full-screen  flex flex-col bg-white   items-center py-28">
+      <section className="w-full-screen  flex flex-col bg-white   items-center ">
         <h1 className="text-[2rem] font-bold max-w-[900px] text-[#00003e] py-10">
           Garanta sua Tranquilidade: Adquira Documentos de Proteção e Foque no
           seu Crescimento na Harmonização
