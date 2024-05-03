@@ -147,100 +147,84 @@ export default function Home() {
       </section>
 
       <section className="w-full h-full  ">
-        
-        <div className="container h-full bg-[#d3ebe2]  mx-auto grid grid-cols-2">
-          <div className="w-full h-full flex flex-col  items-center justify-center ">
-          <div className="w-full h-[250px] grid grid-cols-2 gap-2 ">
-            <img
-              src="/ct.svg"
-              loading="lazy"
-              alt="Imagem"
-              className="w-full h-[250px] object-fill"
-            />
-            <img
-              src="/ana.svg"
-              loading="lazy"
-              alt="Imagem"
-              className="w-full h-[250px] object-fill"
-            />
-          </div>
-          <div className="w-full h-[250px]  justify-items-center grid grid-cols-1 ">
-            <img
-              src="/tcle.svg"
-              alt="Imagem"
-              className="w-1/2 h-[250px] object-fill"
-            />
-          
-          </div>
-          <div className="w-full h-[250px]  grid grid-cols-2 gap-2 ">
-            <img
-              src="/fichas.svg"
-              loading="lazy"
-              alt="Imagem"
-              className="w-full h-full object-fill"
-            />
-            <img
-              src="/term.svg"
-              loading="lazy"
-              alt="Imagem"
-              className="w-full h-full object-fill"
-            />
-          </div>
-          </div>
-          <div className="flex flex-col w-full h-full px-4 py-8">
-            <h1 className="font-extrabold text-[#00003e] text-3xl py-2">DIFERENCIAIS DA DOCUMENTAÇÃO</h1>
-            <div className="w-full h-full flex  flex-col ">
-              <div className="flex flex-col gap-2 mb-8">
-                <h1>PRONTUÁRIOS PLANEJADOS PARA ATIVIDADE DE RESULTADO</h1>
-                <h2>
-                  O{" "}
-                  <span className="font-extrabold text-[#00003e] text-lg">
-                    principal erro
-                  </span>{" "}
-                  das Clinicas de Harmonização!
-                </h2>
-                <p className="text-justify">
-                  A responsabilidade civil dos profissionais de saúde em
-                  atividades fim é mais abrangente e rigorosa. Na atividade fim
-                  ou de resultado, como restou definido pelo Judiciário para
-                  cirurgiões plasticos e profissionais de harmonização, estes
-                  estão vinculados a entrega deste resultado almejado
-                  subjetivamente caso não utilize documentos juricamente
-                  adequados a esta realidade. É essencial que a documentação
-                  produzida pelo profissional esteja preparada para limitar ,
-                  comprovar e definir as limitações impostas pela idiosincrasia
-                  individual de cada paciente
-                </p>
-              </div>
-
-              <div className="flex flex-col gap-2 ">
-                <h1>PRONTUÁRIOS ALINHADOS AO PRINCÍPIO DA AUTONOMIA</h1>
-                <h2>
-                  Uma das{" "}
-                  <span className="font-extrabold text-[#00003e] text-lg">
-                    principais causas de litigio!
-                  </span>{" "}
-                </h2>
-                <p className="text-justify">
-                  O TCLE (termo de consentimento livre e esclarecido),
-                  infelizmente, além de utilizar erronamente modelos espelhados
-                  em termos de profisionais de atividade meio, normalmente são
-                  documentos confusos que não conseguem esclarecer de fato o
-                  paciente e tampouco dar a liberdade de escolha, dando margem
-                  para alegaçoes de vício de consentimento, uso indevido de
-                  imagem e outras discordancias. Os nossos documentos utilizam
-                  uma técnica grafica chamada{" "}
-                  <span className="font-extrabold text-[#00003e] text-lg">
-                    VISUAL LAW OU LEGAL DESIGN
-                  </span>{" "}
-                  , que permite que o paciente entenda o tratamento proposto
-                  visualmente e interaja com o documento.
-                </p>
+        <div className="container h-full bg-[#d3ebe2]  mx-auto py-4 ">
+          <div className="w-full h-full grid grid-cols-2 py-4">
+            <div className="w-full flex flex-col  h-full px-4 ">
+              <h1 className="font-extrabold text-[#00003e] text-3xl py-2">
+                DIFERENCIAIS DA DOCUMENTAÇÃO
+              </h1>
+              <div className="w-full h-full flex  flex-col">
+                <div className="flex flex-col gap-2 ">
+                  <h1>PRONTUÁRIOS PLANEJADOS PARA ATIVIDADE DE RESULTADO</h1>
+                  <h2>
+                    O{" "}
+                    <span className="font-extrabold text-[#00003e] text-lg">
+                      principal erro
+                    </span>{" "}
+                    das Clinicas de Harmonização!
+                  </h2>
+                  <p className="text-justify ">
+                    A responsabilidade civil dos profissionais de saúde em
+                    atividades fim é mais abrangente e rigorosa. Na atividade
+                    fim ou de resultado, como restou definido pelo Judiciário
+                    para cirurgiões plasticos e profissionais de harmonização,
+                    estes estão vinculados a entrega deste resultado almejado
+                    subjetivamente caso não utilize documentos juricamente
+                    adequados a esta realidade. É essencial que a documentação
+                    produzida pelo profissional esteja preparada para limitar ,
+                    comprovar e definir as limitações impostas pela
+                    idiosincrasia individual de cada paciente
+                  </p>
+                </div>
               </div>
             </div>
-
+            <div className="w-full h-full flex items-center justify-center">
+             
+              <img
+                src="/ana.svg"
+                loading="lazy"
+                alt="Imagem"
+                className="w-[80%] h-[270px] object-fill"
+              />
+            </div>
+          </div>
+          <div className="w-full h-full grid grid-cols-2 border-b-[9px] border-t-[9px] border-[#3b8e7d] py-4">
+          <div className="w-full h-full flex items-center justify-center">
+              <img
+                src="/fichas.svg"
+                loading="lazy"
+                alt="Imagem"
+                className="w-[80%] h-[270px] object-fill"
+              />
             
-            <div className="w-full h-full flex  flex-col ">
+            </div>
+            <div className="flex flex-col gap-2 px-4">
+              <h1>PRONTUÁRIOS ALINHADOS AO PRINCÍPIO DA AUTONOMIA</h1>
+              <h2>
+                Uma das{" "}
+                <span className="font-extrabold text-[#00003e] text-lg">
+                  principais causas de litigio!
+                </span>{" "}
+              </h2>
+              <p className="text-justify">
+                O TCLE (termo de consentimento livre e esclarecido),
+                infelizmente, além de utilizar erronamente modelos espelhados em
+                termos de profisionais de atividade meio, normalmente são
+                documentos confusos que não conseguem esclarecer de fato o
+                paciente e tampouco dar a liberdade de escolha, dando margem
+                para alegaçoes de vício de consentimento, uso indevido de imagem
+                e outras discordancias. Os nossos documentos utilizam uma
+                técnica grafica chamada{" "}
+                <span className="font-extrabold text-[#00003e] text-lg">
+                  VISUAL LAW OU LEGAL DESIGN
+                </span>{" "}
+                , que permite que o paciente entenda o tratamento proposto
+                visualmente e interaja com o documento.
+              </p>
+            </div>
+          </div>
+          <div className="w-full h-full grid grid-cols-2 border-b-[9px] border-[#3b8e7d] py-4">
+            <div className="w-full h-full flex  flex-col px-4 ">
               <div className="flex flex-col gap-2">
                 <h1>CONTRATOS E TERMOS EDITÁVEIS E PERSONALIZÁVEIS</h1>
                 <h2>
@@ -262,39 +246,54 @@ export default function Home() {
                   documento ao seu protoloco ou suas rotinas administrativas.
                 </p>
               </div>
-
-              <div className="w-full flex flex-col gap-2 my-4 ">
-                <h1 className="font-extrabold text-[#00003e] text-lg">
-                  OUTRAS VANTAGENS
-                </h1>
-                <div className="pl-2 w-full ">
-                  <ul class="list-disc flex flex-col gap-3">
-                    <li className="list-outside text-left">
-                      Contratos e termos específicos para cada procedimento
-                      projetados para descrever todo plano de tratamento
-                      indicado
-                    </li>
-                    <li>
-                      Termos de consentimento (TCLE’s) projetados para
-                      harmonização, focado na prevenção das principais causas de
-                      demandas judiciais.
-                    </li>
-                    <li>
-                      Ficha de anamnese organizada com ênfase dermatológica,
-                      aspectos psicossociais, validação de retornos e outros.
-                    </li>
-                    <li>
-                      Evite problemas com a subjetividade da percepção de
-                      resultados por parte do paciente através de documentos
-                      compreensíveis e detalhados.
-                    </li>
-                    <li>
-                      Evite problemas com a subjetividade da percepção de
-                      resultados por parte do paciente através de documentos
-                      compreensíveis e detalhados.
-                    </li>
-                  </ul>
-                </div>
+            </div>
+            <div className="w-full h-full flex items-center justify-center">
+              <img
+                src="/tcle.svg"
+                alt="Imagem"
+                className="w-[80%] h-[270px] object-fill"
+              />
+            </div>
+          </div>
+          <div className="w-full h-full grid grid-cols-2 py-4">
+            <div className="w-full h-full flex items-center justify-center">
+            <img
+                src="/term.svg"
+                loading="lazy"
+                alt="Imagem"
+                className="w-[80%] h-[270px] object-fill"
+              />
+            </div>
+            <div className="w-full flex flex-col gap-2 my-4 px-4 ">
+              <h1 className="font-extrabold text-[#00003e] text-lg">
+                OUTRAS VANTAGENS
+              </h1>
+              <div className="pl-2 w-full ">
+                <ul class="list-disc flex flex-col gap-3">
+                  <li className="list-outside text-left">
+                    Contratos e termos específicos para cada procedimento
+                    projetados para descrever todo plano de tratamento indicado
+                  </li>
+                  <li>
+                    Termos de consentimento (TCLE’s) projetados para
+                    harmonização, focado na prevenção das principais causas de
+                    demandas judiciais.
+                  </li>
+                  <li>
+                    Ficha de anamnese organizada com ênfase dermatológica,
+                    aspectos psicossociais, validação de retornos e outros.
+                  </li>
+                  <li>
+                    Evite problemas com a subjetividade da percepção de
+                    resultados por parte do paciente através de documentos
+                    compreensíveis e detalhados.
+                  </li>
+                  <li>
+                    Evite problemas com a subjetividade da percepção de
+                    resultados por parte do paciente através de documentos
+                    compreensíveis e detalhados.
+                  </li>
+                </ul>
               </div>
             </div>
           </div>
@@ -371,11 +370,11 @@ export default function Home() {
         </div>
       </section>
       <section className="w-full min-h-[50vh]  ">
-      <div className="container mx-auto  bg-[#d3ebe2]      ">
-        <h1 className="text-3xl text-[#00003e] font-bold uppercase text-center ">
-          Confira o depoimento de nossos clientes!
-        </h1>
-        <Carousel />
+        <div className="container mx-auto  bg-[#d3ebe2]      ">
+          <h1 className="text-3xl text-[#00003e] font-bold uppercase text-center ">
+            Confira o depoimento de nossos clientes!
+          </h1>
+          <Carousel />
         </div>
       </section>
       <section className="w-full-screen  flex flex-col bg-white   items-center ">
@@ -444,43 +443,3 @@ export default function Home() {
     </main>
   );
 }
-/*
-<div className="container mx-auto  h-full  flex flex-col    ">
-          <h1 className="text-[2rem] py-4 text-left ">
-            DIFERENCIAIS DA DOCUMENTAÇÃO
-          </h1>
-          <div className="w-full h-full flex flex-col md:flex md:flex-row gap-2 ">
-            <div className="w-[50%] h-full flex    ">
-              <div class="w-full h-full bg-red-300 flex">
-                <div className="w-full h-full">
-                 
-                </div>
-                <div className="w-full h-full">
-                 
-                </div>
-              </div>
-            </div>
-           
-
-          <div className="w-full flex gap-2 ">
-            <div className="w-[50%] h-full flex items-center justify-center ">
-              <div class="w-full h-full grid grid-cols-2 gap-2">
-                <img
-                  src="/fichas.svg"
-                  loading="lazy"
-                  alt="Imagem"
-                  className="w-full h-[450px] object-fill"
-                />
-                <img
-                  src="/term.svg"
-                  loading="lazy"
-                  alt="Imagem"
-                  className="w-full h-[450px] object-fill"
-                />
-              </div>
-            </div>
-            
-            </div>
-          </div>
-        </div>
-*/
