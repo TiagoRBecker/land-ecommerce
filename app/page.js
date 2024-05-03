@@ -1,5 +1,5 @@
 import Link from "next/link";
-import Carousel from "@/components/carrousel"
+import Carousel from "@/components/carrousel";
 export default function Home() {
   const mosaico = [
     { id: 1, name: "mosaico", img: "/galeria/mosaico_1.png" },
@@ -20,8 +20,8 @@ export default function Home() {
   ];
   return (
     <main>
-      <section className="w-full h-full bg-[#d3ebe2] ">
-        <div className="container mx-auto min-h-screen flex-col flex     ">
+      <section className="w-full h-screen ">
+        <div className="container mx-auto h-full flex-col flex bg-[#d3ebe2]      ">
           <div className="w-full flex items-center">
             <div className="w-44 h-44">
               <img
@@ -54,15 +54,11 @@ export default function Home() {
             </div>
             <div className="w-full md:w-[33%]">
               <p className="text-[1.6rem] font-black text-[#00003e] text-center ">
-                <span className="text-[#b98e0b]">
-                  Documentos 
-                </span>
-                {" "}para harmonização 
-                produzido por profissionais da saúde e juristas
+                <span className="text-[#b98e0b]">Documentos</span> para
+                harmonização produzido por profissionais da saúde e juristas
               </p>
             </div>
           </div>
-
 
           <div className="w-full h-full flex flex-col md:flex md:flex-row items-center justify-center gap-10 mt-16">
             <Link
@@ -81,9 +77,10 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <section className="w-full min-h-screen flex items-center justify-center bg-[#3b8e7d]  ">
-        <div className="container mx-auto grid-cols-1 md:grid md:grid-cols-2 gap-4  ">
-          <div className="w-full ">
+
+      <section className="w-fullh-full flex items-center justify-center  ">
+        <div className=" py-10  container mx-auto grid-cols-1 md:grid md:grid-cols-2 gap-4  bg-[#3b8e7d]">
+          <div className="w-full h-full flex items-center justify-center flex-col px-4 ">
             <div className="flex gap-3 items-center">
               {icons.map((url, index) => (
                 <img
@@ -94,7 +91,7 @@ export default function Home() {
                 />
               ))}
             </div>
-            <div className=" px-2">
+            <div className="w-full ">
               <h1 className="text-[1.8rem] my-8 font-bold text-white">
                 EQUIPE AUTORA
               </h1>
@@ -107,7 +104,7 @@ export default function Home() {
                 facial e nas redes sociais.
               </p>
             </div>
-            <div className="mt-10">
+            <div className="w-full text-left mt-10">
               <h1 className="font-bold text-white text-lg">
                 Dra. Deusa Guedes
               </h1>
@@ -116,7 +113,7 @@ export default function Home() {
                 clínicas e centros de estética
               </p>
             </div>
-            <div className="">
+            <div className="w-full text-left mt-10">
               <h1 className="font-bold text-white text-lg">
                 Dr. Alexandre Bampi
               </h1>
@@ -131,7 +128,6 @@ export default function Home() {
               {mosaico.map((url, index) => (
                 <div key={index} className="w-full h-[200px] ">
                   <img
-
                     src={url.img}
                     alt={url.name}
                     className="w-full h-full object-cover"
@@ -145,30 +141,56 @@ export default function Home() {
                 alt="Logo"
                 className=" w-full h-28 object-fill"
               />
-             
             </div>
           </div>
         </div>
       </section>
-      <section className="w-full h-full bg-[#d3ebe2] bg-cover bg-left-top bg-no-repeat ">
-        <div className="container mx-auto  h-full  flex flex-col    ">
-          <h1 className="text-[2rem] py-4 text-left ">
-            DIFERENCIAIS DA DOCUMENTAÇÃO
-          </h1>
-          <div className="w-full h-full flex flex-col md:flex md:flex-row gap-2 ">
-            <div className="w-[50%] h-full flex items-center justify-center   ">
-              <div class="w-full h-full  ">
-                <img
-                  src="/banner.svg"
-                  loading="lazy"
-                  alt="Imagem"
-                  className="w-full h-[450px]  object-fill"
-                />
-              </div>
-            
-            </div>
-            <div className="w-[50%] h-full flex  flex-col ">
-              <div className="flex flex-col gap-2">
+
+      <section className="w-full h-full  ">
+        
+        <div className="container h-full bg-[#d3ebe2]  mx-auto grid grid-cols-2">
+          <div className="w-full h-full flex flex-col  items-center justify-center ">
+          <div className="w-full h-[250px] grid grid-cols-2 gap-2 ">
+            <img
+              src="/ct.svg"
+              loading="lazy"
+              alt="Imagem"
+              className="w-full h-[250px] object-fill"
+            />
+            <img
+              src="/ana.svg"
+              loading="lazy"
+              alt="Imagem"
+              className="w-full h-[250px] object-fill"
+            />
+          </div>
+          <div className="w-full h-[250px]  justify-items-center grid grid-cols-1 ">
+            <img
+              src="/tcle.svg"
+              alt="Imagem"
+              className="w-1/2 h-[250px] object-fill"
+            />
+          
+          </div>
+          <div className="w-full h-[250px]  grid grid-cols-2 gap-2 ">
+            <img
+              src="/fichas.svg"
+              loading="lazy"
+              alt="Imagem"
+              className="w-full h-full object-fill"
+            />
+            <img
+              src="/term.svg"
+              loading="lazy"
+              alt="Imagem"
+              className="w-full h-full object-fill"
+            />
+          </div>
+          </div>
+          <div className="flex flex-col w-full h-full px-4 py-8">
+            <h1 className="font-extrabold text-[#00003e] text-3xl py-2">DIFERENCIAIS DA DOCUMENTAÇÃO</h1>
+            <div className="w-full h-full flex  flex-col ">
+              <div className="flex flex-col gap-2 mb-8">
                 <h1>PRONTUÁRIOS PLANEJADOS PARA ATIVIDADE DE RESULTADO</h1>
                 <h2>
                   O{" "}
@@ -216,21 +238,9 @@ export default function Home() {
                 </p>
               </div>
             </div>
-          </div>
 
-
-          <div className="w-full flex gap-2 ">
-            <div className="w-[50%] h-full flex items-center justify-center ">
-            <div class="w-full h-full  ">
-                <img
-                  src="/banner.svg"
-                  loading="lazy"
-                  alt="Imagem"
-                  className="w-full h-[450px] object-fill"
-                />
-              </div>
-            </div>
-            <div className="w-[50%] h-full flex  flex-col ">
+            
+            <div className="w-full h-full flex  flex-col ">
               <div className="flex flex-col gap-2">
                 <h1>CONTRATOS E TERMOS EDITÁVEIS E PERSONALIZÁVEIS</h1>
                 <h2>
@@ -253,8 +263,10 @@ export default function Home() {
                 </p>
               </div>
 
-              <div className="w-full flex flex-col gap-2 my-4">
-                <h1 className="font-extrabold text-[#00003e] text-lg">OUTRAS VANTAGENS</h1>
+              <div className="w-full flex flex-col gap-2 my-4 ">
+                <h1 className="font-extrabold text-[#00003e] text-lg">
+                  OUTRAS VANTAGENS
+                </h1>
                 <div className="pl-2 w-full ">
                   <ul class="list-disc flex flex-col gap-3">
                     <li className="list-outside text-left">
@@ -289,8 +301,8 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="w-full h-full bg-[#3b8e7d]">
-        <div className="container mx-auto  h-full    py-10 flex gap-3">
+      <section className="w-full h-full ">
+        <div className="container mx-auto  h-full    py-10 flex gap-3 bg-[#3b8e7d]">
           <div className="w-[33%]  flex items-center justify-center px-4">
             <h1 className="w-full text-white font-bold text-3xl">
               Documentos disponíveis na plataforma e-commerce
@@ -358,9 +370,13 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <section className="w-full min-h-[50vh] bg-[#d3ebe2]  ">
-        <h1 className="text-3xl text-[#00003e] font-bold uppercase text-center ">Confira o depoimento de nossos clientes!</h1>
-        <Carousel/>
+      <section className="w-full min-h-[50vh]  ">
+      <div className="container mx-auto  bg-[#d3ebe2]      ">
+        <h1 className="text-3xl text-[#00003e] font-bold uppercase text-center ">
+          Confira o depoimento de nossos clientes!
+        </h1>
+        <Carousel />
+        </div>
       </section>
       <section className="w-full-screen  flex flex-col bg-white   items-center ">
         <h1 className="text-[2rem] font-bold max-w-[900px] text-[#00003e] py-10">
@@ -429,39 +445,42 @@ export default function Home() {
   );
 }
 /*
-  <div className="w-full flex gap-2">
-              <div className="w-[50%] h-[450px]   relative  ">
-            
-              </div>
-              <div className="w-[50%] flex flex-col">
-             
-              </div>
-          
-            <div className="flex gap-2">
-              <div className="w-full h-[450px]  relative">
-               
-              </div>
-              <div className="flex flex-col gap-2 my-14">
-                <h1>CONTRATOS E TERMOS EDITÁVEIS E PERSONALIZÁVEIS</h1>
-                <h2>
-                  <span className="font-extrabold text-[#00003e] text-lg">
-                    Adapte o conteúdo{" "}
-                  </span>
-                  para sua prática clinica livremente !{" "}
-                </h2>
-                <p>
-                  Você receberá um arquivo editável e personalizavel, devendo
-                  apenas incluir sua logomarca e seus dados, além de realizar as
-                  alterações que julgar necessária de acordo com sua experiencia
-                  e prática profissional. Todos os aspectos de saúde e jurídicos
-                  foram desenvolvidos por profissionais renomados e estão
-                  prontos para uso, entretanto caso haja discordancia sobre
-                  algum elemento juridico ou de saúde no documento, você pode e
-                  deve fazer as alterações necessárias com seu advogado ou sua
-                  equipe de especialistas para adequar o documento ao seu
-                  protoloco ou suas rotinas administrativas.
-                </p>
+<div className="container mx-auto  h-full  flex flex-col    ">
+          <h1 className="text-[2rem] py-4 text-left ">
+            DIFERENCIAIS DA DOCUMENTAÇÃO
+          </h1>
+          <div className="w-full h-full flex flex-col md:flex md:flex-row gap-2 ">
+            <div className="w-[50%] h-full flex    ">
+              <div class="w-full h-full bg-red-300 flex">
+                <div className="w-full h-full">
+                 
+                </div>
+                <div className="w-full h-full">
+                 
+                </div>
               </div>
             </div>
-           </div>
-           */
+           
+
+          <div className="w-full flex gap-2 ">
+            <div className="w-[50%] h-full flex items-center justify-center ">
+              <div class="w-full h-full grid grid-cols-2 gap-2">
+                <img
+                  src="/fichas.svg"
+                  loading="lazy"
+                  alt="Imagem"
+                  className="w-full h-[450px] object-fill"
+                />
+                <img
+                  src="/term.svg"
+                  loading="lazy"
+                  alt="Imagem"
+                  className="w-full h-[450px] object-fill"
+                />
+              </div>
+            </div>
+            
+            </div>
+          </div>
+        </div>
+*/
