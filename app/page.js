@@ -20,10 +20,10 @@ export default function Home() {
   ];
   return (
     <main>
-      <section className="w-full h-screen ">
-        <div className="container mx-auto h-full flex-col flex bg-[#d3ebe2]      ">
+      <section className="w-full h-full md:h-screen ">
+        <div className="w-full md:container mx-auto h-full flex-col flex bg-[#d3ebe2] py-10      ">
           <div className="w-full flex items-center">
-            <div className="w-44 h-44">
+            <div className="w-full h-full md:w-44 md:h-44">
               <img
                 src="/logo_med.png"
                 alt="Logo"
@@ -70,15 +70,22 @@ export default function Home() {
                 <img src="/cart.svg" className="w-10 h-10 object-fill" />
               </button>
             </Link>
-            <button className="bg-[#3b8e7d] border border-[#d3ebe2] w-[310px] py-5 rounded-full text-white flex items-center gap-3 justify-center transition ease-in-out delay-150 ">
-              CONSULTE PELO WHATSAPP
-              <img src="/w.svg" className="w-10 h-10 object-fill" />
-            </button>
+            <Link
+              href={
+                "https://api.whatsapp.com/send/?phone=555195391300&text=Ol%C3%A1%21+Gostaria+de+conversar+sobre+documentos+projetados+juridicamente+para+profissionais+da+harmoniza%C3%A7%C3%A3o.+Meu+nome+%C3%A9+%28insira+seu+nome%29&type=phone_number&app_absent=0"
+              }
+              target="_blank"
+            >
+              <button className="bg-[#3b8e7d] border border-[#d3ebe2] w-[310px] py-5 rounded-full text-white flex items-center gap-3 justify-center transition ease-in-out delay-150 ">
+                CONSULTE PELO WHATSAPP
+                <img src="/w.svg" className="w-10 h-10 object-fill" />
+              </button>
+            </Link>
           </div>
         </div>
       </section>
 
-      <section className="w-fullh-full flex items-center justify-center  ">
+      <section className="w-full h-full flex items-center justify-center  ">
         <div className=" py-10  container mx-auto grid-cols-1 md:grid md:grid-cols-2 gap-4  bg-[#3b8e7d]">
           <div className="w-full h-full flex items-center justify-center flex-col px-4 ">
             <div className="flex gap-3 items-center">
@@ -148,9 +155,9 @@ export default function Home() {
 
       <section className="w-full h-full  ">
         <div className="container h-full bg-[#d3ebe2]  mx-auto py-4 ">
-          <div className="w-full h-full grid grid-cols-2 py-4">
+          <div className=" grid grid-cols-1 md:w-full h-full md:grid md:grid-cols-2 py-4">
             <div className="w-full flex flex-col  h-full px-4 ">
-              <h1 className="font-extrabold text-[#00003e] text-3xl py-2">
+              <h1 className="text-xl text-center text-[#00003e]  font-extrabold md:text-3xl py-2">
                 DIFERENCIAIS DA DOCUMENTAÇÃO
               </h1>
               <div className="w-full h-full flex  flex-col">
@@ -179,27 +186,27 @@ export default function Home() {
               </div>
             </div>
             <div className="w-full h-full flex items-center justify-center">
-             
               <img
                 src="/ana.svg"
                 loading="lazy"
                 alt="Imagem"
-                className="w-[80%] h-[270px] object-fill"
+                className="w-full md:w-[80%] h-[270px] object-fill"
               />
             </div>
           </div>
-          <div className="w-full h-full grid grid-cols-2 border-b-[9px] border-t-[9px] border-[#3b8e7d] py-4">
-          <div className="w-full h-full flex items-center justify-center">
+          <div className="w-full h-fullgrid grid-cols-1 md:grid md:grid-cols-2 border-b-[9px] border-t-[9px] border-[#3b8e7d] py-4">
+            <div className="hidden md:w-full h-full md:flex items-center justify-center ">
               <img
                 src="/fichas.svg"
                 loading="lazy"
                 alt="Imagem"
                 className="w-[80%] h-[270px] object-fill"
               />
-            
             </div>
             <div className="flex flex-col gap-2 px-4">
-              <h1>PRONTUÁRIOS ALINHADOS AO PRINCÍPIO DA AUTONOMIA</h1>
+              <h1 className="text-xl text-center text-[#00003e]  font-extrabold md:text-3xl py-2">
+                PRONTUÁRIOS ALINHADOS AO PRINCÍPIO DA AUTONOMIA
+              </h1>
               <h2>
                 Uma das{" "}
                 <span className="font-extrabold text-[#00003e] text-lg">
@@ -222,11 +229,21 @@ export default function Home() {
                 visualmente e interaja com o documento.
               </p>
             </div>
+            <div className="w-full h-full flex items-center justify-center ">
+              <img
+                src="/fichas.svg"
+                loading="lazy"
+                alt="Imagem"
+                className="w-[80%] h-[270px] object-fill"
+              />
+            </div>
           </div>
-          <div className="w-full h-full grid grid-cols-2 border-b-[9px] border-[#3b8e7d] py-4">
+          <div className="grid grid-cols-1  md:w-full h-full md:grid md:grid-cols-2 py-4 border-b-[9px] border-[#3b8e7d] ">
             <div className="w-full h-full flex  flex-col px-4 ">
               <div className="flex flex-col gap-2">
-                <h1>CONTRATOS E TERMOS EDITÁVEIS E PERSONALIZÁVEIS</h1>
+                <h1 className="text-xl text-center text-[#00003e]  font-extrabold md:text-3xl py-2">
+                  CONTRATOS E TERMOS EDITÁVEIS E PERSONALIZÁVEIS
+                </h1>
                 <h2>
                   <span className="font-extrabold text-[#00003e] text-lg">
                     Adapte o conteúdo
@@ -255,9 +272,9 @@ export default function Home() {
               />
             </div>
           </div>
-          <div className="w-full h-full grid grid-cols-2 py-4">
-            <div className="w-full h-full flex items-center justify-center">
-            <img
+          <div className="grid grid-cols-1 md:w-full h-full md:grid md:grid-cols-2 py-4">
+            <div className="hidden md:w-full h-full md:flex items-center justify-center">
+              <img
                 src="/term.svg"
                 loading="lazy"
                 alt="Imagem"
@@ -296,23 +313,31 @@ export default function Home() {
                 </ul>
               </div>
             </div>
+            <div className="w-full h-full flex items-center justify-center">
+              <img
+                src="/term.svg"
+                loading="lazy"
+                alt="Imagem"
+                className="w-full md:w-[80%] h-[270px] object-fill"
+              />
+            </div>
           </div>
         </div>
       </section>
 
       <section className="w-full h-full ">
-        <div className="container mx-auto  h-full    py-10 flex gap-3 bg-[#3b8e7d]">
-          <div className="w-[33%]  flex items-center justify-center px-4">
+        <div className="container mx-auto  h-full    py-10 flex flex-col md:flex-row gap-3 bg-[#3b8e7d]">
+          <div className="w-full md:w-[33%]  flex items-center justify-center px-4">
             <h1 className="w-full text-white font-bold text-3xl">
               Documentos disponíveis na plataforma e-commerce
             </h1>
           </div>
-          <div className="w-[33%] flex flex-col items-center justify-center gap-3 px-2 bg-[#163459] bg-opacity-25">
+          <div className="w-full md:w-[33%] flex flex-col items-center justify-center gap-3 px-2 bg-[#163459] bg-opacity-25">
             <h1 className="text-white font-bold text-xl py-2">
               CONTRATO + TCLE
             </h1>
 
-            <ul className="list-disc text-white py-2">
+            <ul className="ml-4 w-full h-full py-2  list-disc text-white ">
               <li className="ml-4">Toxina Botulínica</li>
 
               <li className="ml-4">Acido Hialurônico</li>
@@ -346,13 +371,13 @@ export default function Home() {
               <li className="ml-4">Velashape</li>
             </ul>
           </div>
-          <div className="w-[33%] flex flex-col items-center  px-2 gap-3 bg-[#163459] bg-opacity-25">
+          <div className="w-full md:w-[33%] flex flex-col items-center  px-2 gap-3 bg-[#163459] bg-opacity-25">
             <h1 className="text-white font-bold text-xl py-2">
               DOCUMENTOS FUNDAMENTAIS
             </h1>
             <p className="text-white"></p>
 
-            <ul className="list-disc text-white">
+            <ul className="ml-4 w-full h-full py-2 list-disc text-white">
               <li className="ml-4">Plano de tratamento</li>
               <li className="ml-4">Anamnese dermatológica para harmonização</li>
               <li className="ml-4">Termo de Conclusão de Tratamento</li>
@@ -369,7 +394,8 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <section className="w-full min-h-[50vh]  ">
+
+      <section className="w-full h-full md:min-h-[50vh]  ">
         <div className="container mx-auto  bg-[#d3ebe2]      ">
           <h1 className="text-3xl text-[#00003e] font-bold uppercase text-center ">
             Confira o depoimento de nossos clientes!
@@ -377,18 +403,19 @@ export default function Home() {
           <Carousel />
         </div>
       </section>
-      <section className="w-full-screen  flex flex-col bg-white   items-center ">
+
+      <section className="w-full h-full flex flex-col py-4 bg-white   items-center ">
         <h1 className="text-[2rem] font-bold max-w-[900px] text-[#00003e] py-10">
           Garanta sua Tranquilidade: Adquira Documentos de Proteção e Foque no
           seu Crescimento na Harmonização
         </h1>
-        <div className="w-[90%] h-full mx-auto grid grid-cols-3">
-          <div className="flex items-center justify-center">
+        <div className="w-full grid grid-cols-1 md:w-[90%] h-full mx-auto md:grid md:grid-cols-3">
+          <div className="w-full bg-[#3b8e7d] rounded-md flex items-center justify-center">
             <Link
               href={"https://www.documentosparaharmonizacao.com.br/"}
               target="_blank"
             >
-              <button className="bg-[#3b8e7d] w-[310px] py-5 rounded-full text-white flex items-center gap-1 justify-center transition ease-in-out delay-150 hover:bg-blue-800">
+              <button className="  w-full py-5 rounded-full text-white flex items-center gap-1 justify-center transition ease-in-out delay-150 hover:bg-blue-800">
                 ACESSE O E-COMMERCE
                 <img src="/cart.svg" className="w-10 h-10 object-cover" />
               </button>
@@ -401,44 +428,36 @@ export default function Home() {
               className="w-full h-full object-fill"
             />
           </div>
-          <div className="flex items-center justify-center">
+          <div className="w-full bg-[#3b8e7d] rounded-md flex items-center justify-center">
             <Link
-              href={"https://www.documentosparaharmonizacao.com.br/"}
+              href={
+                "https://api.whatsapp.com/send/?phone=555195391300&text=Ol%C3%A1%21+Gostaria+de+conversar+sobre+documentos+projetados+juridicamente+para+profissionais+da+harmoniza%C3%A7%C3%A3o.+Meu+nome+%C3%A9+%28insira+seu+nome%29&type=phone_number&app_absent=0"
+              }
               target="_blank"
             >
-              <button className="bg-[#3b8e7d] w-[310px] py-5 rounded-full text-white flex items-center gap-3 justify-center transition ease-in-out delay-150 hover:bg-blue-800">
+              <button className="bg-[#3b8e7d] max-w-[310px] py-5 rounded-full text-white flex items-center gap-3 justify-center transition ease-in-out delay-150 hover:bg-blue-800">
                 CONSULTE PELO WHATSAPP
-                <img src="/w.svg" className="w-10 h-10 object-fill" />
+                <img src="/w.svg" className="md:w-10 h-10 object-fill" />
               </button>
             </Link>
           </div>
         </div>
       </section>
-      <section className="w-full flex items-center bg-[#3b8e7d] justify-center gap-3 py-4 ">
-        <div className="flex items-center gap-2 text-white">
-          <img
-            src="/fb.png"
-            alt="Fb"
-            className="w-10 h-10 object-fill rounded-full"
-          />
-          <p>Facebook</p>
-        </div>
-        <div className="flex items-center gap-2 text-white">
-          <img
-            src="/inst.png"
-            alt="Fb"
-            className="w-10 h-10 object-fill rounded-full"
-          />
-          <p>Instagram</p>
-        </div>
-        <div className="flex items-center gap-2 text-white">
-          <img
-            src="/yt.png"
-            alt="Fb"
-            className="w-10 h-10 object-fill rounded-full"
-          />
-          <p>Youtube</p>
-        </div>
+
+      <section className="w-full flex flex-col p-1 md:flex-row items-center bg-[#3b8e7d] justify-center gap-3 py-4 ">
+        <Link
+          href={"https://www.instagram.com/guedesbampi.med/"}
+          target="_blank"
+        >
+          <div className="flex items-center gap-2 text-white">
+            <img
+              src="/inst.png"
+              alt="Fb"
+              className="w-10 h-10 object-fill rounded-full"
+            />
+            <p>Instagram</p>
+          </div>
+        </Link>
       </section>
     </main>
   );

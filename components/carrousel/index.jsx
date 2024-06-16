@@ -14,20 +14,21 @@ const Depoiments = () => {
     autoplay: true,
     speed: 2000,
     autoplaySpeed: 7000,
+    
 
   };
   return (
-    <Slider {...settings}>
+    <Slider {...settings} className="w-full h-full overflow-x-hidden">
       <div className="w-full   bg-cover bg-center bg-no-repeat h-full  mx-auto py-10 flex flex-col gap-5 ">
-        <div className="max-w-[70%] h-full mx-auto flex gap-4 items-center bg-white bg-opacity-55 px-4 py-4">
-          <div className="w-[20%] h-80 flex items-center justify-center">
+        <div className="w-full min-h-[500px] md:max-w-[70%] h-full mx-auto flex gap-4 items-center bg-white bg-opacity-55 px-4 py-4">
+          <div className="hidden md:w-[20%] h-80 md:flex items-center justify-center">
             <img
               src="/bio.png"
               alt="Perfil"
               className="w-60 h-60 object-fill rounded-full"
             />
           </div>
-          <div className="w-[80%] flex flex-col gap-2 ">
+          <div className="w-full md:w-[80%] flex flex-col gap-2 ">
             <p className="text-black">
               “Como profissional de harmonização, sempre me preocupei com
               possíveis problemas legais. Os documentos elaborados por
@@ -120,15 +121,15 @@ const Depoiments = () => {
         </div>
       </div>
       <div className="w-full   bg-cover bg-center bg-no-repeat h-full  mx-auto py-10 flex flex-col gap-5 ">
-      <div className="max-w-[70%] h-full mx-auto flex gap-4 items-center bg-white bg-opacity-55 px-4 py-4">
-          <div className="w-[20%] h-80 flex items-center justify-center">
+      <div className="w-full min-h-[500px]  md:max-w-[70%] h-full mx-auto flex gap-4 items-center bg-white bg-opacity-55 px-4 py-4">
+          <div className="hidden md:w-[20%] h-80 md:flex items-center justify-center">
             <img
               src="/den.png"
               alt="Perfil"
               className="w-60 h-60 object-fill rounded-full"
             />
           </div>
-          <div className="w-[80%]   bg-cover bg-center bg-no-repeat h-full  mx-auto py-10 flex flex-col gap-5 ">
+          <div className="w-full md:w-[80%]   bg-cover bg-center bg-no-repeat h-full  mx-auto py-10 flex flex-col gap-5 ">
             <div className="w-full flex flex-col gap-2 ">
               <p className="text-black">
                 “Como profissional de harmonização, sempre me preocupei com
